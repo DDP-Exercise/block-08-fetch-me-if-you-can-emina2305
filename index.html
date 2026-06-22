@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emina's User Board</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="app">
+        <header class="site-header">
+            <h1>Emina's User Board</h1>
+            <p>Click a user to see their posts, then load comments whenever you need them.</p>
+        </header>
 
-<script src="main.js" type="module"></script>
+        <p id="status" class="status" role="status">Loading users and posts...</p>
+        <section id="users" class="users-list" aria-label="Users"></section>
+    </main>
+
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
